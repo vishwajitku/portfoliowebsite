@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=hea, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" />
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </nav>
+        <div class="intro">
+          <p>UX/UI Designer</p>
+          <h1>
+            Hi, I am <span>Vishwajit <br /></span>kumar kaushal From <br />India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------------------------------about section---------------------------->
+
+    <div id="about">
+      <div class="container">
+        <div class="two-section">
+          <div class="section-one">
+            <img src="images/user.png" />
+          </div>
+          <div class="section-two">
+            <h1>About Me</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eius
+              molestiae dignissimos commodi ad nesciunt, culpa tempora quisquam
+              adipisci a voluptate repellendus unde placeat ea alias laudantium
+              vel explicabo itaque similique reprehenderit eos laborum magnam
+              recusandae! Esse dicta id saepe!
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab()">Skills</p>
+              <p class="tab-links" onclick="opentab()">Experience</p>
+              <p class="tab-links" onclick="opentab()">Education</p>
+            </div>
+            <div class="tab-contents active-contents">
+              <ul>
+                <li><span>UI/UX</span><br />Design And Develop Font Pages</li>
+                <li>
+                  <span>App/Web </span><br />Design And Develop Font Pages
+                </li>
+                <li>
+                  <span>Games/Animation</span><br />Design And Develop Font
+                  Pages
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents">
+              <ul>
+                <li>
+                  <span>2004-2005</span><br />Design And Develop Font Pages
+                </li>
+                <li>
+                  <span>2005-2008 </span><br />Design And Develop Font Pages
+                </li>
+                <li>
+                  <span>2008-2010</span><br />Design And Develop Font Pages
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents">
+              <ul>
+                <li>
+                  <span>Delhi University</span><br />Design And Develop Font
+                  Pages
+                </li>
+                <li>
+                  <span>Army Public School </span><br />Design And Develop Font
+                  Pages
+                </li>
+                <li>
+                  <span>SagerpurFC</span><br />Design And Develop Font Pages
+                </li>
+              </ul>
+            </div>
+
+            <div class="listdata"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName('tab-links');
+      console.log(tablinks);
+      var tabcontents = document.getElementsByClassName('tab-contents');
+      console.log(tabcontents);
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove('active-link');
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove('active-contents');
+        }
+      }
+    </script>
+  </body>
+</html>
